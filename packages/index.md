@@ -25,7 +25,13 @@ cd starter-ts
 pnpm run init
 ```
 
-## 🔨 目录结构
+## 🔨 构建
+
+```bash
+pnpm run build
+```
+
+## 📝 目录结构
 
 ```js
 starter-ts
@@ -47,9 +53,7 @@ starter-ts
 |    ├─index.md
 |    ├─index.ts // 入口文件
 |    ├─public // 静态资源
-|    |   ├─logo.svg
-|    |   ├─vite-icon.svg
-|    |   └vue-icon.svg
+|    |   └logo.svg
 |    ├─.vitepress // vitepress配置
 |    |     ├─config.ts
 |    |     ├─nav.ts

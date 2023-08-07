@@ -6,6 +6,5 @@
 export { }
 
 declare module 'vue' {
-  export interface GlobalComponents {
-  }
+  export interface GlobalComponents {}
 }

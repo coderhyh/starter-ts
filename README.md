@@ -7,7 +7,7 @@
     <img src="https://img.shields.io/github/license/coderhyh/starter-ts" alt="LICENSE">
   </a>
   <a href="#" target="_blank">
-    <img src="https://img.shields.io/github/languages/top/coderhyh/starter-ts?logo=typescript" alt="languages">
+    <img src="https://img.shields.io/github/languages/top/coderhyh/starter-ts" alt="languages">
   </a>
 </p>
 
@@ -33,7 +33,13 @@ cd starter-ts
 pnpm run init
 ```
 
-## 🔨 目录结构
+## 🔨 构建
+
+```bash
+pnpm run build
+```
+
+## 📝 目录结构
 
 ```js
 starter-ts
@@ -55,9 +61,7 @@ starter-ts
 |    ├─index.md
 |    ├─index.ts // 入口文件
 |    ├─public // 静态资源
-|    |   ├─logo.svg
-|    |   ├─vite-icon.svg
-|    |   └vue-icon.svg
+|    |   └logo.svg
 |    ├─.vitepress // vitepress配置
 |    |     ├─config.ts
 |    |     ├─nav.ts

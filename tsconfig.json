@@ -17,7 +17,7 @@
     "strict": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
-    "types": ["element-plus/global"]
+    "types": ["element-plus/global", "vitest/globals"]
   },
   "include": ["packages/**/*"],
   // "include": ["packages/**/*.ts", "packages/**/*.d.ts", "packages/**/*.tsx", "packages/**/*.vue"],

@@ -17,16 +17,16 @@ export default defineConfig({
       'link',
       {
         rel: 'icon',
-        href: './vue-icon.svg',
-      },
+        href: './vue-icon.svg'
+      }
     ],
     [
       'meta',
       {
         name: 'viewport',
-        content: 'width=device-width,height=device-height, maximum-scale=1.0,minimum-scale=1.0',
-      },
-    ],
+        content: 'width=device-width,height=device-height, maximum-scale=1.0,minimum-scale=1.0'
+      }
+    ]
   ],
   themeConfig: {
     logo: '/logo.svg',
@@ -48,12 +48,12 @@ export default defineConfig({
     plugins: [
       AutoImport({
         dts: '../auto-imports.d.ts',
-        resolvers: [ElementPlusResolver()],
+        resolvers: [ElementPlusResolver()]
       }),
       Components({
         dts: '../components.d.ts',
-        resolvers: [ElementPlusResolver()],
-      }),
+        resolvers: [ElementPlusResolver()]
+      })
     ]
   }
 })
