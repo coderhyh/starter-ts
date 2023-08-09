@@ -1,8 +1,8 @@
 {
   "name": "starter-ts",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "npm库的起始模板",
-  "author": "coderhyh Fu <coderhyh@gmail.com>",
+  "author": "coderhyh <coderhyh@gmail.com>",
   "license": "MIT",
   "homepage": "https://coderhyh.github.io/starter-ts",
   "repository": {
@@ -43,7 +43,7 @@
   "scripts": {
     "build": "npm run clean && vue-tsc --noEmit && vite build",
     "clean": "rimraf dist lib es types",
-    "release": "bump --tag --commit \"release: v%s\" --push",
+    "release": "bumpp",
     "test": "vitest -watch",
     "typecheck": "tsc --noEmit",
     "lint": "eslint --ext .js,.ts packages/ --fix",
@@ -58,12 +58,12 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
-    "@jsdevtools/version-bump-prompt": "^6.1.0",
     "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "@vitepress-demo-preview/component": "^2.3.2",
     "@vitepress-demo-preview/plugin": "^1.2.1",
+    "bumpp": "^9.1.1",
     "commitizen": "4.2.4",
     "cz-customizable": "6.3.0",
     "element-plus": "^2.3.8",

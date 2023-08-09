@@ -10,7 +10,7 @@ starter-ts是一个npm库的起始模板
 ## ✨ 特性
 
 - 🏄🏼‍♂️ 结构简洁实用
-- 📦 配置了eslint|husky规范; vitest测试
+- 📦 配置了eslint|commitlint|husky|vitest等
 - 📖 集成vitepress, 使用github pages搭建项目文档
 - 🔨 使用github actions自动化部署文档、发包
 - 🎯 使用 vite + typeScript + pnpm 构建
