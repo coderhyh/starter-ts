@@ -18,9 +18,7 @@
     "lib",
     "es"
   ],
-  "sideEffects": [
-    "dist/*"
-  ],
+  "sideEffects": false,
   "keywords": [
     "starter-ts"
   ],
