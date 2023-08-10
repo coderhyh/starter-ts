@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-import { useSum } from '.'
+import { useSum } from 'starter-ts'
 import { ref, computed } from 'vue'
 
 const val1 = ref(1)

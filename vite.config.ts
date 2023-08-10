@@ -1,11 +1,13 @@
+/// <reference types="vitest" />
+
 import path from 'path'
 import { defineConfig } from 'vite'
 import { buildPlugin } from 'vite-plugin-build'
 
-import vitest from './vitest.config'
-
 export default defineConfig({
-  test: vitest,
+  test: {
+    globals: true
+  },
   plugins: [
     buildPlugin({
       fileBuild: {

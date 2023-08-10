@@ -50,23 +50,30 @@ starter-ts
 ├─.prettierrc
 ├─LICENSE
 ├─README.md
-├─commitlint.config.js
-├─package.json
 ├─auto-imports.d.ts
+├─commitlint.config.js
 ├─components.d.ts
+├─package.json
 ├─pnpm-lock.yaml
 ├─tsconfig.json
+├─unocss.config.ts
 ├─vite.config.ts
 ├─packages // 项目根目录
 |    ├─index.md
 |    ├─index.ts // 入口文件
-|    ├─public // 静态资源
+|    ├─useSum
+|    |   ├─demo.vue
+|    |   ├─index.md
+|    |   ├─index.test.ts
+|    |   └index.ts
+|    ├─public
 |    |   └logo.svg
 |    ├─.vitepress // vitepress配置
 |    |     ├─config.ts
 |    |     ├─nav.ts
 |    |     ├─sidebar.ts
 |    |     ├─theme
+|    |     |   ├─base.css
 |    |     |   └index.ts
 ├─.vscode
 |    ├─extensions.json
