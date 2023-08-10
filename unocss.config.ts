@@ -28,7 +28,11 @@ function getSizeRules(Mapping: Record<string, string>): Rule<{}>[] {
 export const createConfig = () => {
   return defineConfig({
     presets: [presetUno(), presetAttributify()],
-    include: [/\.vue$/],
+    content: {
+      pipeline: {
+        include: [/\.vue$/]
+      }
+    },
     rules: getSizeRules(sizeMapping)
   })
 }
