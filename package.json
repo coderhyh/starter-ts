@@ -85,7 +85,6 @@
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
-    "*.{vue,js,ts,jsx,tsx}": "pnpm lint:script",
-    "*.{css,less,vue,html}": "pnpm lint:style"
+    "*.{vue,js,ts,jsx,tsx}": "pnpm lint"
   }
 }

@@ -19,6 +19,6 @@ const sum = computed(() => useSum(val1.value, val2.value))
 
 <style scoped>
 input {
-  box-shadow: 0 0 5px 1px #eee;
+  box-shadow: 0 0 5px 1px #eeeeee;
 }
 </style>
