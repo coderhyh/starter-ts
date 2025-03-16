@@ -19,10 +19,6 @@
   background: #cfcfcf;
 }
 
-:root {
-  --component-preview-bg: #292b30;
-}
-
 .vp-doc tr:nth-child(2n) {
   background-color: inherit;
 }

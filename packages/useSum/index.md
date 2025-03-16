@@ -4,4 +4,8 @@
 
 ## 示例
 
-<preview path="./demo.vue" title="说明" description="计算两数之和"></preview>
+:::preview 说明 || 计算两数之和
+
+demo-preview=./demo.vue
+
+:::

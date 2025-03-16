@@ -1,15 +1,15 @@
 <template>
   <div>
-    <input type="number" v-model="val1" /> &nbsp;
-    <input type="number" v-model="val2" />
-    <br /><br />
+    <input v-model="val1" type="number"> &nbsp;
+    <input v-model="val2" type="number">
+    <br><br>
     result: {{ sum }}
   </div>
 </template>
 
 <script setup lang="ts">
 import { useSum } from 'starter-ts'
-import { ref, computed } from 'vue'
+import { computed, ref } from 'vue'
 
 const val1 = ref(1)
 const val2 = ref(1)

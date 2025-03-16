@@ -1,10 +1,10 @@
-import { defineConfig } from 'vitepress'
-import { containerPreview, componentPreview } from '@vitepress-demo-preview/plugin'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import { resolve } from 'node:path'
+import { componentPreview, containerPreview } from '@vitepress-demo-preview/plugin'
 import Unocss from 'unocss/vite'
-import { resolve } from 'path'
+import AutoImport from 'unplugin-auto-import/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import Components from 'unplugin-vue-components/vite'
+import { defineConfig } from 'vitepress'
 
 import nav from './nav'
 import sidebar from './sidebar'
@@ -19,16 +19,16 @@ export default defineConfig({
       'link',
       {
         rel: 'icon',
-        href: './vue-icon.svg'
-      }
+        href: './vue-icon.svg',
+      },
     ],
     [
       'meta',
       {
         name: 'viewport',
-        content: 'width=device-width,height=device-height, maximum-scale=1.0,minimum-scale=1.0'
-      }
-    ]
+        content: 'width=device-width,height=device-height, maximum-scale=1.0,minimum-scale=1.0',
+      },
+    ],
   ],
   themeConfig: {
     logo: '/logo.svg',
@@ -36,28 +36,28 @@ export default defineConfig({
     sidebar,
     socialLinks: [{ icon: 'github', link: 'https://github.com/coderhyh/starter-ts' }],
     search: {
-      provider: 'local'
-    }
+      provider: 'local',
+    },
   },
   markdown: {
     lineNumbers: true,
     config(md) {
       md.use(containerPreview)
       md.use(componentPreview)
-    }
+    },
   },
   vite: {
     resolve: { alias: { 'starter-ts': resolve(__dirname, '../') } },
     plugins: [
       AutoImport({
         dts: '../auto-imports.d.ts',
-        resolvers: [ElementPlusResolver()]
+        resolvers: [ElementPlusResolver()],
       }),
       Components({
         dts: '../components.d.ts',
-        resolvers: [ElementPlusResolver()]
+        resolvers: [ElementPlusResolver()],
       }),
-      Unocss()
-    ]
-  }
+      Unocss(),
+    ],
+  },
 })
