@@ -49,12 +49,12 @@
     "test": "vitest -watch",
     "typecheck": "tsc --noEmit",
     "lint": "eslint packages/ --fix",
+    "postinstall": "npx simple-git-hooks",
     "commit": "git add . && cz",
     "prettier": "prettier --write .",
     "docs:dev": "vitepress dev packages",
     "docs:build": "vitepress build packages",
-    "docs:preview": "vitepress preview packages",
-    "init": "pnpm i && git init && git add . && git commit -m 'feat: init'"
+    "docs:preview": "vitepress preview packages"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.11.2",
